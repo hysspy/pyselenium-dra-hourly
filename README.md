@@ -10,9 +10,9 @@ Linkedin : Herwin Yudha Setyawan
 
 ## Project Name
 
-Automation M1 DRA Hourly Report
+Automation DRA Hourly Report
 
-M1 DRA Hourly Report Mail
+DRA Hourly Report Mail
 
 ## Version Update
 
