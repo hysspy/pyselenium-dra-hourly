@@ -685,13 +685,13 @@ email_message = MIMEMultipart()
 email_message['From'] = email_from
 email_message['To'] = ','.join(toaddr)
 email_message['Cc'] = ','.join(cc)
-email_message['Subject'] = f'M1 Hourly Monitoring for DRA {date_str} SGT'
+email_message['Subject'] = f'web Hourly Monitoring for DRA {date_str} SGT'
 
 # Attach the html doc defined earlier, as a MIMEText html content type to the MIME message
 email_message.attach(MIMEText(html, "html"))
 
 # Attach more (documents)
-## Apply function with extra_header on m1aws.png. This will render m1aws.png in the html content
+## Apply function with extra_header on webaws.png. This will render webaws.png in the html content
 ##############################################################
 attach_file_to_email(email_message, 'yBucket.png', {'Content-ID': '<yBucket>'})
 attach_file_to_email(email_message, 'yGxTotal.png', {'Content-ID': '<yGxTotal>'})
